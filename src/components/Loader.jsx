@@ -1,8 +1,9 @@
 import React from 'react';
 import {ThreeCircles} from 'react-loader-spinner'
+import styles from './Loader.module.css'
 
 const Loader = () => (
-    <div className="loader">
+    <div className={styles.Loader}>
         <ThreeCircles
         type ="ThreeCircles"
         height={100}
