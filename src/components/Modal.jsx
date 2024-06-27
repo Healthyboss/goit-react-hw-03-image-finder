@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import PropTypes from 'prop-types';
+import styles from './Modal.module.css';
 
 const Modal = ({largeImageURL, onClose}) => {
 
@@ -28,9 +29,9 @@ const Modal = ({largeImageURL, onClose}) => {
       };
 
       return (
-        <div  onClick={handleBackdropClick}>
+        <div className={styles.modal} onClick={handleBackdropClick}>
           <div >
-            <img src={largeImageURL} alt="" />
+            <img className={styles.largeImg} src={largeImageURL} alt="" />
           </div>
         </div>
       );
